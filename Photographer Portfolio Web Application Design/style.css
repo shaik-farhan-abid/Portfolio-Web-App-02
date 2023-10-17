@@ -1,0 +1,398 @@
+@font-face {
+  font-family: 'Explora';
+  src: url(Explora-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'poppins';
+  src: url(Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: 'raleway';
+  src: url(Raleway-Light.ttf);
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url(Montserrat-Light.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: black;
+  color: white;
+  font-size: 1.5vw;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+header {
+  font-family: 'explora';
+  font-size: 3vw;
+  word-spacing: 1vw;
+  letter-spacing: .5vw;
+  background-color: #000000;
+  padding: 2vw;
+  text-align: center;
+  color: #e1d7f5;
+  border-bottom: 1px solid #9190c5;
+}
+
+nav {
+  background-color: blanchedalmond;
+  position: sticky;
+  z-index: 10000;
+  top: 0;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin-left: 15%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #32645d;
+  font-family: 'poppins';
+  font-size: 1.5vw;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 50% 30%;
+}
+
+.about-container .about-photo img {
+  margin-top: 2vw;
+  width: 100%;
+  padding: 2.5vw;
+  border: 2px solid snow;
+}
+
+.about-container .about-text {
+  text-align: center;
+  margin-left: 12vw;
+  margin-top: 12vw;
+  font-family: 'raleway';
+  width: 100%;
+}
+
+.about-container .about-text .about-h2 {
+  padding-bottom: 2vw;
+}
+
+.about-container .about-text .about-p {
+  font-size: 1.2vw;
+  word-spacing: .20vw;
+}
+
+.about-container .about-text .about-btn {
+  margin-top: 2.5vw;
+  font-size: 1.2vw;
+  padding: .8vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: #ce7373;
+  font-family: 'poppins';
+}
+
+.recent-gallery .recent-p-1 {
+  font-family: 'montserrat';
+  font-size: 3vw;
+  margin-left: 7vw;
+  padding: 7.5vw;
+  color: #d3b1b1;
+}
+
+.recent-gallery .recent-p-1::after {
+  content: "";
+  position: absolute;
+  width: 40vw;
+  height: 1px;
+  margin-top: 2vw;
+  margin-left: 4vw;
+  background-color: #d3b1b1;
+}
+
+.recent-gallery .gal {
+  display: grid;
+  margin-left: 3.5vw;
+  margin-right: 3.5vw;
+  margin-top: 4vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 2.5vw;
+  justify-content: center;
+}
+
+.recent-gallery .gal img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+}
+
+.recent-gallery .gal-btn {
+  padding: 5vw;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  font-family: 'montserrat';
+  font-size: 1.35vw;
+  background-color: transparent;
+  border: 2.5px solid rgba(240, 204, 204, 0.911);
+  color: red;
+  margin: 5vw;
+  margin-left: 40%;
+}
+
+.cam-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 7.5vw;
+  font-family: 'poppins';
+  font-size: 1vw;
+  grid-gap: 3vw;
+}
+
+.cam-details .div-c-1 p {
+  text-align: center;
+  padding-bottom: 3vw;
+  font-size: 2.5vw;
+}
+
+.cam-details .div-c-1 .div-c-2 p {
+  font-size: 1.2vw;
+}
+
+.services {
+  margin-top: 15vw;
+  display: grid;
+  grid-template-columns: 15% 50% 30%;
+}
+
+.services .service-h1 {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  letter-spacing: .1vw;
+  z-index: -1;
+  padding: 1vw;
+  margin-bottom: 25vw;
+  margin-top: 15vw;
+  margin-left: 2.5vw;
+  background-color: rgba(230, 68, 68, 0.678);
+  font-family: 'poppins';
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-gap: 2vw;
+  font-family: 'poppins';
+}
+
+.service-container .s-div-1 {
+  border: 2px solid rgba(121, 52, 52, 0.603);
+  padding: 1vw;
+}
+
+.service-container .s-div-1 i {
+  margin-bottom: 2.5vw;
+}
+
+.service-container .s-div-1 h3 {
+  margin-top: 1.5vw;
+  font-size: 1.2vw;
+  margin-bottom: 1.2vw;
+}
+
+.service-container .s-div-1 p {
+  font-size: 1vw;
+}
+
+.travelphoto {
+  width: 100%;
+  height: 75vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(vp.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-family: 'montserrat';
+}
+
+.travelphoto .tr-1 {
+  width: 80%;
+  margin-left: 3vw;
+  margin-top: 7vw;
+  text-align: left;
+}
+
+.travelphoto .tr-1 .tr-h2 {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+.travelphoto .tr-1 .tr-p {
+  font-size: 1.2vw;
+}
+
+.travelphoto .tr-2 img {
+  margin-top: 5vw;
+  margin-left: 1.5vw;
+  width: 80%;
+  border: 15px solid #645353;
+  filter: brightness(0.75);
+}
+
+.review {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15vw;
+  margin-bottom: 15vw;
+  text-align: center;
+  font-family: 'montserrat';
+}
+
+.review .review-1 {
+  width: 80%;
+  margin-left: 2vw;
+}
+
+.review .review-1 img {
+  width: 50%;
+  border-radius: 1000px;
+  filter: brightness(0.9);
+  margin-bottom: 3.5vw;
+}
+
+.review .review-1 .review-p {
+  font-size: 1vw;
+  padding-bottom: 3vw;
+  border-bottom: 2px solid red;
+}
+
+.package {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  font-family: 'montserrat';
+  margin-left: 3vw;
+  margin-right: 3vw;
+  grid-gap: 5vw;
+}
+
+.package .package-1 {
+  text-align: center;
+  border: 2.5px solid #b33f3f;
+  color: #5c5c42;
+}
+
+.package .package-1 h3 {
+  margin: 1.5vw;
+  font-size: 1.5vw;
+}
+
+.package .package-1 p {
+  margin: 2vw;
+}
+
+.package .package-1 img {
+  width: 100%;
+}
+
+.package .package-1 button {
+  font-size: 1vw;
+  padding: 1.5vw;
+  background-color: #08010a;
+  color: turquoise;
+  font-family: 'poppins';
+  border: 1px solid #5c5c42;
+  margin-bottom: 1vw;
+  padding-left: 3.5vw;
+  padding-right: 3.5vw;
+}
+
+.contact {
+  text-align: center;
+  margin: 15vw;
+  font-family: 'poppins';
+}
+
+.contact .con-btn {
+  font-family: 'poppins';
+  padding: 2vw;
+  margin-top: 4vw;
+  margin-right: 1vw;
+  font-size: 1.2vw;
+  background-color: #cc5050;
+  color: snow;
+}
+
+footer {
+  border-top: 1px solid rgba(197, 75, 75, 0.322);
+  padding-top: 5vw;
+  font-family: 'poppins';
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 5.5vw;
+  margin-right: 5vw;
+}
+
+footer .f-1 .f-h3 {
+  font-size: 1.65vw;
+}
+
+footer .f-1 .f-p {
+  font-size: 1vw;
+}
+
+footer .f-1 .subscribe {
+  font-size: 2vw;
+  margin-bottom: 2vw;
+}
+
+footer .f-1 input {
+  padding: 2vw;
+  border-right: 1px solid #352727;
+  background-color: #dddddd;
+}
+
+footer .f-1 input:focus {
+  outline: none;
+}
+
+footer .f-1 .social {
+  padding-bottom: 4.5vw;
+  border-bottom: 1px solid rgba(126, 59, 59, 0.5);
+}
+
+footer .f-1 .social img {
+  margin-right: 1.5vw;
+  margin-top: 4vw;
+  margin-left: 1vw;
+}
+/*# sourceMappingURL=style.css.map */
